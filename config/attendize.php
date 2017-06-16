@@ -5,7 +5,8 @@ return [
     'version' => file_get_contents(base_path('VERSION')),
 
     'ticket_status_sold_out'        => 1,
-    'ticket_status_after_sale_date' => 2,//
+    'ticket_status_after_sale_date' => 2,
+	'enable_payments'          	    => env('ENABLE_PAYMENTS', 1),
     'enable_test_payments'          => env('ENABLE_TEST_PAYMENTS', false),
 
     'payment_gateway_stripe'   => 1,
