@@ -4761,7 +4761,7 @@ function processFormErrors($form, errors)
                 $input = $input.parent();
             }
 
-            $input.after('<div class="help-block error">' + error + '</div>')
+            $input.before('<div class="help-block error">' + error + '</div>')
                 .parent()
                 .addClass('has-error');
         }
